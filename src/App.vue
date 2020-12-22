@@ -1,5 +1,6 @@
 <template>
   <TopHeader></TopHeader>
+  <!-- If I remove TopHeader, dynamic component is rendered correctly. -->
   <main>
     <component :is="view"></component>
   </main>

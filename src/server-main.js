@@ -3,7 +3,13 @@ import { renderToString } from '@vue/server-renderer'
 import App from './App.vue'
 import './index.css'
 
-const app = createSSRApp(App)
-renderToString(app).then(html => {
-  console.log('vue server render: ', html)
-})
+module.exports = () => {
+  const app = createSSRApp(App)
+  return renderToString(app).then(html => {
+    console.log('vue server render: ', html)
+  })
+}
+
+if (require.main === module) { // just for test
+  module.exports()
+}

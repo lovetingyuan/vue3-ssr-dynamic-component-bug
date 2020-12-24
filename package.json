@@ -7,8 +7,6 @@
     "build:ssr": "vite build --entry src/server-main.js --ssr"
   },
   "dependencies": {
-    "immer": "^8.0.0",
-    "redux": "^4.0.5",
     "vue": "^3.0.4"
   },
   "devDependencies": {

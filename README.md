@@ -11,3 +11,5 @@ vue server render:  <!--[--><header><img alt="Vue logo" src="/_assets/logo.3b714
 As you can see, component `MyTest` is not rendered as expect.
 
 But if I remove `TopHeader` in `App.vue`, the ssr result is correct.
+
+see issue: https://github.com/vuejs/vue-next/issues/2863
